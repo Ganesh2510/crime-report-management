@@ -1,0 +1,335 @@
+
+(object Petal
+    version    	42
+    _written   	"Rose 4.5.8054a"
+    charSet    	0)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"63741EA80153"
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	16
+	gridY      	16
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	1
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"63741EA80155"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"63741EA801BF"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"63741EA80154"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"63741EA80156"
+	logical_models 	(list unit_reference_list
+	    (object Class "police"
+		quid       	"63741ED60398"
+		stereotype 	"Actor")
+	    (object UseCase "login"
+		quid       	"63741EDB00D0")
+	    (object UseCase "checkComplaint"
+		quid       	"63741EE5007F")
+	    (object UseCase "checkAllComplaintStatus"
+		quid       	"63741EEE03A0")
+	    (object UseCase "logout"
+		quid       	"63741EF70198")
+	    (object Association "$UNNAMED$0"
+		quid       	"63741EFF0380"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"63741F00025C"
+			supplier   	"Logical View::login"
+			quidu      	"63741EDB00D0"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"63741F00025D"
+			supplier   	"Logical View::police"
+			quidu      	"63741ED60398"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$3"
+		quid       	"63741F02012D"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"63741F020340"
+			supplier   	"Logical View::checkComplaint"
+			quidu      	"63741EE5007F"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"63741F020341"
+			supplier   	"Logical View::police"
+			quidu      	"63741ED60398"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$6"
+		quid       	"63741F050220"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"63741F0600B8"
+			supplier   	"Logical View::checkAllComplaintStatus"
+			quidu      	"63741EEE03A0"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"63741F0600B9"
+			supplier   	"Logical View::police"
+			quidu      	"63741ED60398"
+			is_navigable 	TRUE)))
+	    (object Association "$UNNAMED$9"
+		quid       	"63741F070369"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"63741F08022C"
+			supplier   	"Logical View::logout"
+			quidu      	"63741EF70198"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"63741F08022D"
+			supplier   	"Logical View::police"
+			quidu      	"63741ED60398"
+			is_navigable 	TRUE))))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"63741EA80160"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object UseCaseView "Logical View::login" @1
+			location   	(1024, 352)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(1024, 490)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"login")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"63741EDB00D0"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::checkComplaint" @2
+			location   	(1024, 592)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1024, 730)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"checkComplaint")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"63741EE5007F"
+			height     	118
+			autoResize 	TRUE)
+		    (object UseCaseView "Logical View::checkAllComplaintStatus" @3
+			location   	(1024, 832)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(1024, 970)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"checkAllComplaintStatus")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"63741EEE03A0"
+			height     	118
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::police" @4
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(288, 608)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(288, 768)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	327
+			    justify    	0
+			    label      	"police")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"63741ED60398"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @5
+			location   	(628, 485)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"63741EFF0380"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @6
+				Parent_View 	@5
+				location   	(340, -123)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F00025C"
+				client     	@5
+				supplier   	@1
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @7
+				Parent_View 	@5
+				location   	(340, -123)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F00025D"
+				client     	@5
+				supplier   	@4
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$3" @8
+			location   	(628, 598)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"63741F02012D"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @9
+				Parent_View 	@8
+				location   	(340, -10)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F020340"
+				client     	@8
+				supplier   	@2
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @10
+				Parent_View 	@8
+				location   	(340, -10)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F020341"
+				client     	@8
+				supplier   	@4
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$6" @11
+			location   	(628, 709)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"63741F050220"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @12
+				Parent_View 	@11
+				location   	(340, 101)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F0600B8"
+				client     	@11
+				supplier   	@3
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @13
+				Parent_View 	@11
+				location   	(340, 101)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F0600B9"
+				client     	@11
+				supplier   	@4
+				line_style 	0)))
+		    (object UseCaseView "Logical View::logout" @14
+			location   	(1024, 1072)
+			label      	(object ItemLabel
+			    Parent_View 	@14
+			    location   	(1024, 1210)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	633
+			    justify    	0
+			    label      	"logout")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	12058623
+			quidu      	"63741EF70198"
+			height     	118
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$9" @15
+			location   	(638, 828)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"63741F070369"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @16
+				Parent_View 	@15
+				location   	(350, 220)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F08022C"
+				client     	@15
+				supplier   	@14
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @17
+				Parent_View 	@15
+				location   	(350, 220)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"63741F08022D"
+				client     	@15
+				supplier   	@4
+				line_style 	0)))))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"63741EA80156"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"63741EA801BE"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    process_structure 	(object Processes
+	quid       	"63741EA80157"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"63741EA80159"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"63741EA80158"))
